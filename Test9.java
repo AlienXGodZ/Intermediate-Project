@@ -27,7 +27,7 @@ public class Test9 {
             System.out.println("ENTER YOUR CHOICE:");
             int choice = sc.nextInt();
 
-            switch (choice){
+            switch (choice) {
 
                 case 1:
 
@@ -40,7 +40,7 @@ public class Test9 {
                     System.out.println("ENTER PRODUCT PRICE:");
                     double price = sc.nextDouble();
 
-                    s1.add(id,new productcatalog(name,price));
+                    s1.add(id, new productcatalog(name, price));
 
                     break;
 
@@ -50,7 +50,7 @@ public class Test9 {
                     name = sc.next();
 
 
-                   s1.search(name);
+                    s1.search(name);
                     break;
 
                 case 3:
@@ -61,17 +61,17 @@ public class Test9 {
                     System.out.println("ENTER PRODUCT NAME TO UPDATE:");
                     name = sc.next();
 
-                    s1.updateProductName(id,name);
+                    s1.updateProductName(id, name);
                     break;
 
                 case 4:
 
-                  System.out.println("ENTER PRODUCT NAME TO REMOVE:");
+                    System.out.println("ENTER PRODUCT NAME TO REMOVE:");
                     name = sc.next();
 
 
                     s1.removebyname(name);
-                     break;
+                    break;
 
                 case 5:
 
@@ -104,7 +104,7 @@ public class Test9 {
                     System.out.println("EMTER PRICE:");
                     price = sc.nextInt();
 
-                    s1.updateprodcutPrice(name,price);
+                    s1.updateprodcutPrice(name, price);
                     break;
 
                 case 9:
@@ -129,37 +129,7 @@ public class Test9 {
                 default:
 
                     System.out.println("INVALID CHOICE");
-
-
-
             }
-
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
